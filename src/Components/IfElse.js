@@ -18,7 +18,7 @@ export default class IfElse extends React.Component {
     }
 
     handleChange(e) {
-        this.setState({ inputText: e.target.value });
+        this.setState({inputText: e.target.value});
     }
 
     handleSave() {
@@ -30,10 +30,11 @@ export default class IfElse extends React.Component {
     }
 
 
-    render () {
-        if(this.state.mode === 'view') {
+    render() {
+        if (this.state.mode === 'view') {
             return (
                 <div>
+                    <h1>VIEW MODE</h1>
                     <p>Text: {this.state.text}</p>
                     <button onClick={this.handleEdit}>
                         Edit
@@ -43,6 +44,7 @@ export default class IfElse extends React.Component {
         } else {
             return (
                 <div>
+                    <h1>EDIT MODE</h1>
                     <p>Text: {this.state.text}</p>
                     <input
                         onChange={this.handleChange}

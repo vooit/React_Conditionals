@@ -3,6 +3,7 @@
  */
 import React from "react";
 import IfElse from './Components/IfElse';
+import Null from './Components/Null';
 
 class App extends React.Component {
     constructor(props) {
@@ -14,6 +15,8 @@ class App extends React.Component {
         return (
             <div>
               <IfElse/>
+                <hr/>
+                <Null/>
             </div>
         );
     }
