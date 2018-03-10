@@ -4,6 +4,10 @@
 import React from "react";
 import IfElse from './Components/IfElse';
 import Null from './Components/Null';
+import ElementVariable from './Components/ElementVariable';
+import TernaryOperator from './Components/TernaryOperator';
+import Subcomponent from './Components/Subcomponent';
+
 
 class App extends React.Component {
     constructor(props) {
@@ -17,6 +21,12 @@ class App extends React.Component {
               <IfElse/>
                 <hr/>
                 <Null/>
+                <hr/>
+                <ElementVariable/>
+                <hr/>
+                <TernaryOperator/>
+                <hr/>
+                <Subcomponent/>
             </div>
         );
     }
