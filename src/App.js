@@ -7,6 +7,7 @@ import Null from './Components/Null';
 import ElementVariable from './Components/ElementVariable';
 import TernaryOperator from './Components/TernaryOperator';
 import Subcomponent from './Components/Subcomponent';
+import HigherOrderComponent from './Components/HOC';
 
 
 class App extends React.Component {
@@ -27,6 +28,8 @@ class App extends React.Component {
                 <TernaryOperator/>
                 <hr/>
                 <Subcomponent/>
+                <hr/>
+                <HigherOrderComponent/>
             </div>
         );
     }
